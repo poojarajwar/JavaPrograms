@@ -5,7 +5,7 @@ class CoinFlip
 	public static void main(String args[])
 	{
 		Scanner sc=new Scanner(System.in);
-		char d;		
+		char choice;		
 
 		do
 		{
@@ -28,15 +28,12 @@ class CoinFlip
 
 		System.out.println("total No of head is : "+head);
 		System.out.println("Total No of tail is : "+tail);
+
 		System.out.println("Do u want to Continue press y : ");
-		d=sc.next().charAt(0);
-		if(d!='y'||d!='Y')
-		{
-			System.out.println("Thank u ...");
-			System.exit(0);
-		}
-		}while(d=='y'||d=='Y');
-	
+		choice=sc.next().charAt(0);
+		
+		}while(choice=='y'||choice=='Y');
+		System.out.println("End the Program");
 	}
 
 }
