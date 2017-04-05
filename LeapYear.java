@@ -1,0 +1,58 @@
+import java.util.Scanner;
+class LeapYear
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		int year=0;
+		char d;
+		do
+		{
+		try
+		{
+			System.out.println("Enter the Year : ");
+			year=sc.nextInt();
+		}
+		catch(Exception e)
+		{
+			System.out.println("This is not the Year");
+			break;	
+		}
+		
+		if(year/1000>=1 && year/1000<=9)
+		{
+			if(year%4==0 || year%400==0 && year%100!=0)
+			{
+				System.out.println("Leap year");
+			}
+
+			else
+			{
+				System.out.println("year is not Leap year.");
+			}
+			System.out.println("Do u want to continue press y : ");
+			d=sc.next().charAt(0);
+			if(d!='y'||d!='Y')
+			{
+				System.out.println("Thank u ....");
+				System.exit(0);
+			}
+
+		}
+		else
+		{
+			System.out.println("No Should be in 4 digit : ");
+			System.out.print("Do u want to continue press y: ");
+			d=sc.next().charAt(0);
+			if(d!='y'||d!='Y')
+			{
+				System.out.println("Thank u ....");
+				System.exit(0);
+			}
+		}
+			
+		}while(d=='y'||d=='Y');
+		
+	}
+
+}
