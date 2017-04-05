@@ -5,7 +5,7 @@ class LeapYear
 	{
 		Scanner sc=new Scanner(System.in);
 		int year=0;
-		char d;
+		char choice;
 		do
 		{
 		try
@@ -38,9 +38,9 @@ class LeapYear
 		}
 
 		System.out.print("Do u want to continue press y: ");
-		d=sc.next().charAt(0);
+		choice=sc.next().charAt(0);
 			
-		}while(d=='y' || d=='Y');
+		}while(choice=='y' || choice=='Y');
 		System.out.println("thank u...");
 		
 	}
